@@ -1,79 +1,95 @@
-# YES BANK Stock Price Prediction
+# 📈 YES BANK Stock Closing Price Prediction
 
-## Project Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange)
+![EDA](https://img.shields.io/badge/EDA-20%20Visualizations-green)
+![Models](https://img.shields.io/badge/Models-3-purple)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-This project performs Exploratory Data Analysis (EDA) and Machine Learning on historical monthly YES BANK stock price data.
+## 📌 Project Overview
 
-The main objective is to analyse stock price patterns and build regression models to estimate the monthly closing price using Open, High, and Low prices.
+This project presents a complete **Exploratory Data Analysis (EDA) and Machine Learning Regression workflow** using historical monthly stock-price data of **YES BANK**.
 
-## Dataset
+The primary objective is to analyse historical stock-price behaviour, identify important relationships among the variables, and build regression models to estimate the monthly **Close price** using:
 
-The dataset contains the following features:
+- Open price
+- High price
+- Low price
 
-- Date
-- Open
-- High
-- Low
-- Close
+The project covers the complete data science lifecycle, including:
 
-## Exploratory Data Analysis
+- Data understanding
+- Data cleaning and preprocessing
+- Exploratory Data Analysis
+- 20 meaningful visualizations
+- Statistical hypothesis testing
+- Feature engineering
+- Feature selection
+- Chronological train-test splitting
+- Machine learning model development
+- Hyperparameter tuning
+- Model evaluation and comparison
+- Final model selection
+- Model saving and loading
+- Sanity-check prediction
 
-The EDA notebook contains 20 meaningful visualizations covering:
+---
 
-- Stock price trends over time
-- Distribution analysis
-- Outlier analysis
-- Correlation analysis
-- Monthly price range
-- Open-to-Close percentage change
-- Univariate analysis
-- Bivariate analysis
-- Multivariate analysis
+## 🎯 Business Objective
 
-## Machine Learning Models
+The objective of this project is to develop a data-driven system that can estimate the monthly closing price of YES BANK stock using historical Open, High, and Low prices.
 
-The following regression models were implemented and compared:
+The project also aims to:
 
-1. Linear Regression
-2. Ridge Regression
-3. Random Forest Regressor
+- Understand long-term stock-price trends
+- Identify periods of high volatility
+- Study relationships among OHLC variables
+- Determine the strongest predictors of Close price
+- Compare multiple regression algorithms
+- Select a simple, accurate, and interpretable final model
 
-## Model Evaluation Metrics
+> **Important:** The model is intended as a decision-support and educational tool. It should not be considered a guaranteed stock-market forecasting system or financial advice.
 
-The models were evaluated using:
+---
 
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
+## 📊 Dataset Overview
 
-Hyperparameter tuning was also performed to improve model performance.
+The dataset contains historical monthly YES BANK stock-price observations from **July 2005 to November 2020**.
 
-## Project Files
+| Feature | Description |
+|---|---|
+| `Date` | Month and year of the stock-price observation |
+| `Open` | Opening stock price for the month |
+| `High` | Highest stock price recorded during the month |
+| `Low` | Lowest stock price recorded during the month |
+| `Close` | Closing stock price and target variable |
 
-- `EDA_YesBank_StockPrices_Project.ipynb` — Detailed EDA with 20 charts
-- `ML_YesBank_StockPrices_project.ipynb` — Machine Learning model development and evaluation
-- `data_YesBank_StockPrices.csv` — Dataset used for the project
+### Dataset Summary
 
-## Tools and Technologies
+- **Number of records:** 185
+- **Number of original columns:** 5
+- **Missing values:** 0
+- **Duplicate records:** 0
+- **Target variable:** `Close`
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- SciPy
-- Joblib
-- Google Colab
+---
 
-## Conclusion
+## 🧹 Data Cleaning and Preprocessing
 
-The project demonstrates a complete data science workflow, including data understanding, cleaning, exploratory data analysis, feature selection, model training, hyperparameter tuning, evaluation, and model saving.
+The following preprocessing steps were performed:
 
-The relationships among Open, High, Low, and Close prices support the use of regression-based machine learning models for closing-price estimation.
+- Converted the `Date` column into datetime format
+- Sorted the observations chronologically
+- Checked for missing values
+- Checked for duplicate records
+- Examined data types
+- Analysed statistical outliers
+- Retained genuine historical extreme stock prices
+- Created additional analytical features
 
-## Author
+### Engineered Features
 
-**Janani M**  
-M.Sc. Data Science Student  
-Aspiring Data Analyst
+#### Monthly Price Range
+
+```text
+Monthly_Range = High - Low
