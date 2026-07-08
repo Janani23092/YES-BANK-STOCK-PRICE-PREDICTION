@@ -1,11 +1,5 @@
 # 📈 YES BANK Stock Closing Price Prediction
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Regression-orange)
-![EDA](https://img.shields.io/badge/EDA-20%20Visualizations-green)
-![Models](https://img.shields.io/badge/Models-3-purple)
-![Status](https://img.shields.io/badge/Project-Completed-success)
-
 ## 📌 Project Overview
 
 This project presents a complete **Exploratory Data Analysis (EDA) and Machine Learning Regression workflow** using historical monthly stock price data of **YES BANK**.
@@ -449,18 +443,6 @@ Conclusion and Recommendations
 ## 👩‍💻 Author
 
 ### Janani M
-
-**M.Sc. Data Science Student**  
-**Aspiring Data Analyst**
-
-### Skills Demonstrated
-
-`Python` • `EDA` • `Data Visualization` • `Statistical Analysis` • `Machine Learning` • `Regression` • `Model Evaluation`
-
----
-
-## ⭐ Acknowledgement
-
-This project was completed as part of an internship project to demonstrate practical skills in Exploratory Data Analysis, statistical analysis, machine learning, model evaluation, and technical documentation.
+https://www.linkedin.com/in/janani-m-0211b63bb
 
 If you found this project useful, consider giving the repository a ⭐.
